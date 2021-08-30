@@ -56,8 +56,6 @@ willeerd.tiplabels(tip=db, pch=20, radial.adj=1.2, col="blue")
 ring((count-min(count))*0.15/(max(count)-min(count)), as.phylo(clusters), offset = 0.2, col = '#00a5a7')
 ring(cut$cl*0.05/cut$cl, as.phylo(clusters), offset = 0.3, col = colors()[cut$cl+1])
 legend(x = 'topright', legend = c('PharmGKB', 'DrugBank', 'Frequency in Medline'), lty = 1, col = c('orange1', 'blue','#00a5a7'),lwd = 1.5, cex = 0.7, bty ='o')
-legend(x = 'bottomleft', legend = c(cut$cl), lty = 1, col = c(colors()[cut$cl+1]),lwd = 5, cex = 0.7, bty ='n')
-
 
 }
 ```
